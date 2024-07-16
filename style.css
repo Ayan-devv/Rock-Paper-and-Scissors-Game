@@ -77,3 +77,38 @@ img {
     margin-top: 30px;
 
 }
+/* Mobile-specific styles (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    /* Your mobile-specific styles here */
+  }
+ 
+  @media only screen and (max-width: 768px) {
+    .nav {
+      width: 100%; /* Make the nav bar full-width */
+      height: 40px; /* Reduce the height */
+    }
+    .nav-parent {
+      flex-direction: column; /* Stack the nav elements vertically */
+    }
+    .choices {
+      flex-wrap: wrap; /* Allow choices to wrap to the next line */
+      gap: 20px; /* Reduce the gap between choices */
+    }
+    .choice {
+      height: 150px; /* Reduce the size of each choice */
+      width: 150px;
+    }
+    img {
+      height: 140px; /* Reduce the size of the images */
+    }
+    .user-scoreboard {
+      flex-direction: column; /* Stack the scoreboard elements vertically */
+      gap: 50px; /* Reduce the gap between scoreboard elements */
+    }
+    #user-score, #comp-score {
+      font-size: 30px; /* Reduce the font size of the scores */
+    }
+    #msg {
+      font-size: 20px; /* Reduce the font size of the message */
+    }
+  }  
